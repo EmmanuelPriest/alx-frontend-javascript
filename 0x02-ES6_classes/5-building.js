@@ -9,6 +9,7 @@ export default class Building {
     this._sqft = sqft;
   }
 
+  // getter method
   get sqft() {
     return this._sqft;
   }
