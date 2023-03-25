@@ -23,11 +23,10 @@ export default class HolbertonClass {
   [Symbol.toPrimitive](hint) {
     if (hint === 'number') {
       return this._size;
-    } else if (hint === 'string') {
+    } if (hint === 'string') {
       return this._location;
-    } else {
-      throw new TypeError(`Cannot convert object to ${hint}`);
     }
+    throw new TypeError(`Cannot convert object to ${hint}`);
   }
 }
 
