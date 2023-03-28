@@ -11,6 +11,4 @@ function createInt8TypedArray(length, position, value) {
   return buffer;
 }
 
-module.exports = {
-  createInt8TypedArray,
-};
+module.exports = createInt8TypedArray;
