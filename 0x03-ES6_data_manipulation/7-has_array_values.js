@@ -1,5 +1,9 @@
 export default function hasValuesFromArray(set, arr) {
-  // Use the every() method to check if every element in the array exists in the set
-  return arr.every(value => set.has(value));
+  for (let n = 0; n < arr.length; n++) {
+    if (!set.has(arr[n])) {
+      return false;
+    }
+  }
+  return true;
 }
 // module.exports = hasValuesFromArray;
