@@ -16,22 +16,22 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Subjects;
 (function (Subjects) {
-    var Java = /** @class */ (function (_super) {
-        __extends(Java, _super);
-        function Java() {
+    var Cpp = /** @class */ (function (_super) {
+        __extends(Cpp, _super);
+        function Cpp() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        Java.prototype.getRequirements = function () {
-            return 'Here is the list of requirements for Java';
+        Cpp.prototype.getRequirements = function () {
+            return 'Here is the list of requirements for Cpp';
         };
-        Java.prototype.getAvailableTeacher = function () {
+        Cpp.prototype.getAvailableTeacher = function () {
             var teacher = this.teacher;
-            if (!teacher.experienceTeachingJava) {
+            if (!teacher.experienceTeachingC) {
                 return 'No available teacher';
             }
             return "Available Teacher: ".concat(teacher.firstName);
         };
-        return Java;
+        return Cpp;
     }(Subject));
-    Subjects.Java = Java;
+    Subjects.Cpp = Cpp;
 })(Subjects || (Subjects = {}));
